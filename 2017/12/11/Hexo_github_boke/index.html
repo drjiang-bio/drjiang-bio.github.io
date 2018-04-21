@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Blog of Jiang">
 <meta property="og:description" content="Hexo + github免费搭建个人博客">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2017-12-10T18:15:33.115Z">
+<meta property="og:updated_time" content="2018-04-21T06:22:31.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + github 搭建个人博客">
 <meta name="twitter:description" content="Hexo + github免费搭建个人博客">
@@ -181,16 +181,19 @@
       
         <p><strong>摘要</strong>：<br><code>1.先下载安装git和node.js，然后配置hexo(可酌情参考官网文章),2.创建git本地仓库及远程仓库并使之互联，3.hexo文件</code></p>
 <h2 id="1-先得有git和node-js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）"><a href="#1-先得有git和node-js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）" class="headerlink" title="1.先得有git和node.js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）"></a>1.先得有git和node.js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir xxx</span><br><span class="line">$ cd xxx</span><br><span class="line">$ git init #初始化xxx文件夹（创建git本地仓库）</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="2-然后再git-bash中安装hexo"><a href="#2-然后再git-bash中安装hexo" class="headerlink" title="2.然后再git bash中安装hexo."></a>2.然后再git bash中安装hexo.</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli (或者npm install -g hexo-cli) # 安装hexo </span><br><span class="line">$ cd d:\\ # 切换工作目录至d:\\</span><br><span class="line">$ hexo init blog  # 初始化当前路径为博客站点存放位置</span><br><span class="line">$ cd blog </span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server # 运行hexo server</span><br></pre></td></tr></table></figure>
 <p>  至此，在本地即可查看博客站点，默认访问地址为：localhost:4000（具体可看运行结果）。<br>  新创建的源文件默认位于博客目录下面的source_posts文件夹下，hexo支持markdown。<br>  只需运行hexo new 文件名 即可新建一篇博客（<strong>尚未试验</strong>）</p>
 <h2 id="3-关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）"><a href="#3-关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）" class="headerlink" title="3.关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）"></a>3.关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）</h2><ul>
 <li>创建远程仓库<a href="https://github.com/" target="_blank" rel="noopener">[Github]:https://github.com/</a> </li>
 <li><p>配置SSH key</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh #检查本机已存在的ssh密钥</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br><span class="line">$ ssh -T git@github.com # 测试是否能连接成功</span><br></pre></td></tr></table></figure>
-<p>  成功的话显示为：Hi arron-j! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:arron-j/arron-j.github.io.git #同步</span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh #检查本机已存在的ssh密钥</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
 <p>  新设密码为打开key的密码（可以不设置直接回车），最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 测试是否能连接成功</span><br></pre></td></tr></table></figure>
+<p>  成功的话显示为：Hi arron-j! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
 </li>
+</ul>
+<ul>
 <li><p>配置_config.yml中有关deploy的部分</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: git@github.com:liuxianan/liuxianan.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
 </li>
