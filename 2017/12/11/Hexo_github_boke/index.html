@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo + github 搭建个人博客 | Hexo</title>
+  <title>Hexo + github 搭建个人博客 | Blog of Jiang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Hexo + github免费搭建个人博客">
 <meta name="keywords" content="博客,hexo,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + github 搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2017/12/11/Hexo_github_boke/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Blog of Jiang">
 <meta property="og:description" content="Hexo + github免费搭建个人博客">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-21T06:31:13.875Z">
+<meta property="og:updated_time" content="2018-04-21T06:43:37.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + github 搭建个人博客">
 <meta name="twitter:description" content="Hexo + github免费搭建个人博客">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Blog of Jiang" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -51,8 +51,10 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">Jiang</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">一切有为法如梦幻泡影</p>
 		
 
 		<nav class="header-menu">
@@ -109,8 +111,10 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">Jiang</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>一切有为法如梦幻泡影<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -177,8 +181,7 @@
       
         <p><strong>摘要</strong>：<br><code>1.先下载安装git和node.js，然后配置hexo(可酌情参考官网文章),2.创建git本地仓库及远程仓库并使之互联，3.hexo文件</code></p>
 <h2 id="1-先得有git和node-js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）"><a href="#1-先得有git和node-js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）" class="headerlink" title="1.先得有git和node.js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）"></a>1.先得有git和node.js环境，安装hexo之前，最好先配置好git文件夹（创建git本地仓库）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir xxx</span><br><span class="line">$ cd xxx</span><br><span class="line">$ git init #初始化xxx文件夹（创建git本地仓库）</span><br></pre></td></tr></table></figure>
-<more>
-
+<p>more</p>
 <h2 id="2-然后再git-bash中安装hexo"><a href="#2-然后再git-bash中安装hexo" class="headerlink" title="2.然后再git bash中安装hexo."></a>2.然后再git bash中安装hexo.</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli (或者npm install -g hexo-cli) # 安装hexo </span><br><span class="line">$ cd d:\\ # 切换工作目录至d:\\</span><br><span class="line">$ hexo init blog  # 初始化当前路径为博客站点存放位置</span><br><span class="line">$ cd blog </span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server # 运行hexo server</span><br></pre></td></tr></table></figure>
 <p>  至此，在本地即可查看博客站点，默认访问地址为：localhost:4000（具体可看运行结果）。<br>  新创建的源文件默认位于博客目录下面的source_posts文件夹下，hexo支持markdown。<br>  只需运行hexo new 文件名 即可新建一篇博客（<strong>尚未试验</strong>）</p>
 <h2 id="3-关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）"><a href="#3-关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）" class="headerlink" title="3.关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）"></a>3.关联本地博客与远端仓库（即为关联git本地仓库至远程仓库）</h2><ul>
@@ -202,7 +205,7 @@
 <p><strong>附录</strong><br><strong>1.常见hexo命令</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br><span class="line">## 缩写：</span><br><span class="line">hexo n == hexo new</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo d == hexo deploy</span><br><span class="line">## 组合命令：</span><br><span class="line">hexo s -g #生成并本地预览</span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure></p>
 <p><strong>2.设置博文目录文章摘要长度</strong><br>默认情况下，生成的博文目录会显示全部的文章内容，如何设置文章摘要的长度呢？,在合适的位置加上<code>&lt;!--more--&gt;</code>将不会显示全文.例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 前言</span><br><span class="line">使用github pages服务搭建博客的好处有：</span><br><span class="line">1. 全是静态文件，访问速度快；</span><br><span class="line">2. 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</span><br><span class="line">3. 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">4. 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</span><br><span class="line">5. 博客内容可以轻松打包、转移、发布到其它平台；</span><br><span class="line">6. 等等；</span><br></pre></td></tr></table></figure></p>
 <h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><p>1.<a href="http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa" target="_blank" rel="noopener">http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa</a> <strong>流程</strong><br>2.<a href="https://jingyan.baidu.com/article/60ccbceb46bd0664cab197b9.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/60ccbceb46bd0664cab197b9.html</a> <strong>流程</strong><br>3.<a href="http://blog.csdn.net/renfufei/article/details/37725057/" target="_blank" rel="noopener">http://blog.csdn.net/renfufei/article/details/37725057/</a> <strong>远程仓库</strong><br>4.<a href="https://jingyan.baidu.com/article/dca1fa6f756777f1a44052e3.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/dca1fa6f756777f1a44052e3.html</a> <strong>SSH key</strong><br>5.<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰的Git教程</a> <strong>Git基础知识</strong></p>
-</more>
+
       
 
       
@@ -374,7 +377,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 John Doe
+    		&copy; 2018 Jiang
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
